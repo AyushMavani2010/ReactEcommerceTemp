@@ -25,6 +25,9 @@ const Flex = styled.div({
 });
 
 const HeaderMain = styled.div({
+  position: "sticky",
+  backgroundColor: "white",
+  top: 0,
   display: "flex",
   justifyContent: "space-between",
   alignItems: "center",
@@ -72,7 +75,7 @@ const Header = () => {
             height="50px"
             BgColor="rgb(124, 113, 223 )"
             borderRadius="50px"
-            icon={<ArrowRight size={20} color="white"/>}
+            icon={<ArrowRight size={20} color="white" />}
             name="Get started"
             color="white"
             border="none"

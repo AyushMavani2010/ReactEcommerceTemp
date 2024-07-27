@@ -8,6 +8,7 @@ import Category from "./Category";
 import Product from "./Product";
 import Gallery from "./Gallery";
 import Faq from "./Faq";
+import Footer from "./Footer";
 const Container = styled.div({
   fontFamily: "Inter",
   padding: "20px 70px ",
@@ -15,14 +16,17 @@ const Container = styled.div({
 
 const index = () => {
   return (
-    <Container>
-      <Header />
-      <Hero />
-      <Category />
-      <Product />
-      <Gallery />
-      <Faq />
-    </Container>
+    <>
+      <Container>
+        <Header />
+        <Hero />
+        <Category />
+        <Product />
+        <Gallery />
+        <Faq />
+      </Container>
+      <Footer />
+    </>
   );
 };
 
