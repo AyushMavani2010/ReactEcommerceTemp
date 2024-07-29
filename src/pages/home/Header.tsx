@@ -4,12 +4,8 @@ import logo from "../../assets/images/Oasis.png";
 import "../../App.css";
 import ArrowRight from "../../componets/ArrowIcon";
 import Cart from "../../componets/Cart";
+import MenuIcon from "../../componets/Menu";
 import Button from "../../componets/button/Button";
-
-const Container = styled.div({
-  fontFamily: "Inter",
-  padding: "20px 70px ",
-});
 
 const Trolly = styled.button({
   width: "50px",
@@ -18,19 +14,37 @@ const Trolly = styled.button({
   borderRadius: "50%",
   marginRight: "20px",
   border: "none",
+  "@media (max-width: 768px)": {
+    display: "none",
+  },
+});
+
+const HeaderButton = styled.div({
+  "@media (max-width: 768px)": {
+    display: "none",
+  },
+});
+
+const MenuIconWrapper = styled.div({
+  display: "none",
+  "@media (max-width: 768px)": {
+    display: "block",
+  },
 });
 
 const Flex = styled.div({
   display: "flex",
 });
 
-const HeaderMain = styled.div({
+const RootContiner = styled.div({
   position: "sticky",
   backgroundColor: "white",
   top: 0,
   display: "flex",
   justifyContent: "space-between",
   alignItems: "center",
+  width: "100%",
+  height: "auto",
 });
 
 const HomeMenu = styled.ul({
@@ -38,6 +52,9 @@ const HomeMenu = styled.ul({
   justifyContent: "space-between",
   listStyle: "none",
   gap: "20px",
+  "@media (max-width: 768px)": {
+    display: "none",
+  },
 });
 
 const StyledLink = styled.a({
@@ -47,7 +64,7 @@ const StyledLink = styled.a({
 
 const Header = () => {
   return (
-    <HeaderMain>
+    <RootContiner>
       <div>
         <img src={logo} alt="" />
       </div>
@@ -69,7 +86,7 @@ const Header = () => {
         <Trolly>
           <Cart size={20} />
         </Trolly>
-        <div>
+        <HeaderButton>
           <Button
             width="150px"
             height="50px"
@@ -80,9 +97,12 @@ const Header = () => {
             color="white"
             border="none"
           />
-        </div>
+        </HeaderButton>
+        <MenuIconWrapper>
+          <MenuIcon size={30} color="black" />
+        </MenuIconWrapper>
       </Flex>
-    </HeaderMain>
+    </RootContiner>
   );
 };
 

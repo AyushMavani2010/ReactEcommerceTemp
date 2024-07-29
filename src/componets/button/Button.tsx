@@ -13,7 +13,7 @@ interface ButtonProps {
   onClick?: () => void | undefined;
   color: string;
   style?: any | undefined;
-  border: string ;
+  border: string;
 }
 const RootContainer = styled.button<{
   width: string;
@@ -32,6 +32,8 @@ const RootContainer = styled.button<{
   color: color,
   alignItems: "center",
   border: border,
+  "@media(max-width: 1320px)": {
+  },
 }));
 
 const Button: FC<ButtonProps> = ({

@@ -3,31 +3,58 @@ import React from "react";
 import styled from "@emotion/styled";
 import HeroImage from "../../assets/images/image.png";
 
-const HeroMain = styled.div({
+const RootContainer = styled.div({
   padding: "100px 0px",
 });
 const HeroTextMain = styled.div({
   textAlign: "center",
 });
 const HeroFirstText = styled.p({
-  fontSize: "18px",
+  fontSize: "1.5vw",
   fontWeight: 500,
+  display: "flex",
+  flex: 1,
+  justifyContent: "center",
+  "@media (max-width: 768px)": {
+    fontSize: "18px",
+  },
 });
 const HeroSecText = styled.p({
-  fontSize: "61px",
+  fontSize: "3vw",
   fontWeight: 700,
+
+  // "@media (max-width: 1320px)": {
+  //   fontSize: "51px",
+  // },
+
+  // "@media (max-width: 540px)": {
+  //   fontSize: "40px",
+  // },
+  "@media (max-width: 425px)": {
+    fontSize: "25px",
+  },
+  "@media (max-width: 768px)": {
+    fontSize: "25px",
+  },  
 });
 const HeroThirdText = styled.p({
-  fontSize: "20px",
+  fontSize: "1.5vw",
   fontWeight: 400,
+  "@media (max-width: 425px)": {
+    fontSize: "16px",
+  },
+  "@media (max-width: 768px)": {
+    fontSize: "16px",
+  },
+  width: "auto",
 });
 const HeroMainImage = styled.div({
   display: "flex",
-  justifyContent: "center",
+  flex: 1,
 });
 const Hero = () => {
   return (
-    <HeroMain>
+    <RootContainer>
       <HeroTextMain>
         <HeroFirstText>FURNITURE STORE</HeroFirstText>
         <HeroSecText>
@@ -40,9 +67,9 @@ const Hero = () => {
         </HeroThirdText>
       </HeroTextMain>
       <HeroMainImage>
-        <img src={HeroImage} alt="" style={{flex:1}} />
+        <img src={HeroImage} style={{ width: "100%", height: "auto" }} />
       </HeroMainImage>
-    </HeroMain>
+    </RootContainer>
   );
 };
 

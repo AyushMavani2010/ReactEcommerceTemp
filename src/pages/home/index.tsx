@@ -12,6 +12,12 @@ import Footer from "./Footer";
 const Container = styled.div({
   fontFamily: "Inter",
   padding: "20px 70px ",
+  "@media(max-width: 768px)": {
+    padding:"0px 50px"
+  },
+  "@media(max-width: 540px)": {
+    padding:"20px 30px"
+  },
 });
 
 const index = () => {
@@ -19,13 +25,13 @@ const index = () => {
     <>
       <Container>
         <Header />
-        <Hero />
+        <Hero />  
         <Category />
-        <Product />
-        <Gallery />
-        <Faq />
+        {/* <Product /> */}
+        {/* <Gallery /> */}
+        {/* <Faq /> */}
       </Container>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };

@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "@emotion/styled";
+
 import ArrowRight from "../../componets/ArrowIcon";
 
 import CategoryImage from "../../assets/images/Image.png";
@@ -23,8 +24,7 @@ const Flex = styled.div({
   display: "flex",
   gap: 50,
 });
-const CategoriesCard = styled.div({
-  flex: 6,
+const CategoriesCard = styled.image({
   padding: "50px 0px",
 });
 
@@ -43,7 +43,9 @@ const Category = () => {
           <CategoryCard name="Kitchen" image={CategorySecSecImage} />
         </CategoriesCard>
       </Flex>
-      <CategoryCard name="Kitchen" image={CategoryThirdImage} />
+      <div style={{width:"100%"}}>
+        <CategoryCard name="Kitchen" image={CategoryThirdImage} />
+      </div>
     </CategoriesMain>
   );
 };

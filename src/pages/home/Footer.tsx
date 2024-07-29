@@ -18,7 +18,11 @@ const FirstSection = styled.div({
   justifyContent: "space-between",
   flexDirection: "column",
 });
-const FirstSectionText = styled.div({});
+const FirstSectionText = styled.div({
+  display: "flex",
+  gap: 10,
+  color: "white",
+});
 const FirstSectionLogo = styled.div({});
 const Page = styled.a({
   color: "white",
@@ -46,14 +50,17 @@ const Footer = () => {
             <img src={logo} color="white" alt="" />
           </FirstSectionLogo>
           <FirstSectionText>
-            <Page href="#">Home</Page>
-            <Page href="#">Blog</Page>
-            <Page href="#">Sale</Page>
-            <br />
-            <Page href="#">About us</Page>
+            <Page href="#">Home</Page>/<Page href="#">Blog</Page>/
+            <Page href="#">Sale</Page>/<Page href="#">About us</Page>
           </FirstSectionText>
         </FirstSection>
-        <FirstSection>
+        <FirstSection
+          style={{
+            display: "flex",
+            justifyContent: "end",
+            flexDirection: "column",
+          }}
+        >
           <Heading>Contact Us</Heading>
           <Text>+1 999 888-76-54</Text>
           <Heading style={{ fontSize: "14px" }}>Email</Heading>
