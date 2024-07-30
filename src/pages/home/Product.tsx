@@ -32,12 +32,16 @@ const RootContainer = styled.div({
 const CategoriesHeading = styled.p({
   fontSize: "39px",
   fontWeight: 600,
+  "@media(max-width: 540px)": {
+    fontSize:"29px"
+  },
 });
 
 const Flex = styled.div({
   display: "flex",
   gap: 50,
   padding: "0px 0px 50px 0px",
+  flexWrap: "wrap",
 });
 
 const FooterArea = styled.div({
@@ -47,7 +51,7 @@ const FooterArea = styled.div({
 const FooterButton = styled.div({
   display: "flex",
   justifyContent: "center",
-  padding:"30px 0px 0px 0px "
+  padding: "30px 0px 0px 0px ",
 });
 
 const FooterText = styled.p(() => ({
@@ -56,6 +60,8 @@ const FooterText = styled.p(() => ({
   display: "flex",
   justifyContent: "center",
 }));
+
+const FooterImage = styled.img(() => ({}));
 
 const Product = () => {
   return (
@@ -83,8 +89,7 @@ const Product = () => {
           name="Modern Fabrix Accent"
           price="$38"
         ></GalleryCard>
-      </Flex>
-      <Flex>
+
         <GalleryCard
           image={GalleryFIfthImage}
           name="Wooden Accent Chair"
@@ -105,8 +110,7 @@ const Product = () => {
           name="Natural Wood Table"
           price="$38"
         ></GalleryCard>
-      </Flex>
-      <Flex>
+
         <GalleryCard
           image={GalleryNineImage}
           name="Loveseat Compact 2-S"
@@ -127,8 +131,7 @@ const Product = () => {
           name="Roundhill  Accent Chair"
           price="$38"
         ></GalleryCard>
-      </Flex>
-      <Flex>
+
         <GalleryCard
           image={GalleryThrImage}
           name="Round Terra Marble Table"
@@ -149,8 +152,7 @@ const Product = () => {
           name="Kitchen Bar Stool"
           price="$38"
         ></GalleryCard>
-      </Flex>
-      <Flex>
+
         <GalleryCard
           image={GallerySevImage}
           name="Luxe Modern Armchair "
@@ -174,7 +176,8 @@ const Product = () => {
       </Flex>
       <FooterArea>
         <FooterText>Showing 20 of 48 results</FooterText>
-        <img src={Slider} alt="" />
+        <hr style={{ minWidth: "200px", maxWidth: "200px" }} />
+
         <FooterButton>
           <Button
             width="150px"

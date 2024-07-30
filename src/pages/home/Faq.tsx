@@ -26,7 +26,7 @@ const QuestionNumber = styled.p({
   fontSize: "23px",
   fontWeight: 500,
 });
-const Question = styled.p({ fontSize: "1.1vw", fontWeight: 500 });
+const Question = styled.p({ fontSize: "23px", fontWeight: 500 });
 const Answer = styled.p({
   fontSize: "18px",
   fontWeight: 400,
@@ -63,7 +63,7 @@ const Faq = () => {
             borderRadius="50px"
             color="black"
             border="none"
-            icon={<ArrowDown color="black" />}
+            icon={<ArrowDown color="black" size={25} />}
           />
         </QuestionContainer>
         <BorderMain />
@@ -120,7 +120,7 @@ const Faq = () => {
             borderRadius="50px"
             color="black"
             border="none"
-            icon={<ArrowDown color="black" />}
+            icon={<ArrowDown color="black" size={25} />}
           />
         </QuestionContainer>
         <BorderMain />

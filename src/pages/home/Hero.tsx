@@ -10,7 +10,7 @@ const HeroTextMain = styled.div({
   textAlign: "center",
 });
 const HeroFirstText = styled.p({
-  fontSize: "1.5vw",
+  fontSize: "18px",
   fontWeight: 500,
   display: "flex",
   flex: 1,
@@ -20,7 +20,7 @@ const HeroFirstText = styled.p({
   },
 });
 const HeroSecText = styled.p({
-  fontSize: "3vw",
+  fontSize: "49px",
   fontWeight: 700,
 
   // "@media (max-width: 1320px)": {
@@ -35,10 +35,10 @@ const HeroSecText = styled.p({
   },
   "@media (max-width: 768px)": {
     fontSize: "25px",
-  },  
+  },
 });
 const HeroThirdText = styled.p({
-  fontSize: "1.5vw",
+  fontSize: "20px",
   fontWeight: 400,
   "@media (max-width: 425px)": {
     fontSize: "16px",

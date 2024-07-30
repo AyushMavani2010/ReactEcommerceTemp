@@ -18,6 +18,9 @@ const Container = styled.div({
   "@media(max-width: 540px)": {
     padding:"20px 30px"
   },
+  "@media(max-width: 440px)": {
+    padding:"20px 20px"
+  },
 });
 
 const index = () => {
@@ -25,7 +28,7 @@ const index = () => {
     <>
       <Container>
         <Header />
-        <Hero />  
+        {/* <Hero />   */}
         <Category />
         {/* <Product /> */}
         {/* <Gallery /> */}

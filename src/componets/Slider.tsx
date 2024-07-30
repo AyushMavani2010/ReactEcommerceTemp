@@ -10,6 +10,9 @@ const Slider = () => {
     items: 10,
     autoWidth: true,
     margin: 20,
+    dots: false,
+    responsiveClass: true,
+  
   };
   return (
     <div>
@@ -22,6 +25,28 @@ const Slider = () => {
             borderRadius="50px"
             name="All"
             color="white"
+            border="none"
+          />
+        </div>
+        <div className="item">
+          <Button
+            width="150px"
+            height="50px"
+            BgColor="rgba(248, 247, 251, 1)"
+            borderRadius="50px"
+            name="Bedroom"
+            color="rgba(46, 47, 51, 1)"
+            border="none"
+          />
+        </div>
+        <div className="item">
+          <Button
+            width="150px"
+            height="50px"
+            BgColor="rgba(248, 247, 251, 1)"
+            borderRadius="50px"
+            name="Bedroom"
+            color="rgba(46, 47, 51, 1)"
             border="none"
           />
         </div>

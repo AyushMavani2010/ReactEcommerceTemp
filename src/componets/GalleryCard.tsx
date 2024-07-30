@@ -20,9 +20,9 @@ const HeadingMain = styled.div(() => ({
   display: "flex",
   justifyContent: "space-between",
 }));
-const CardMain = styled.div(() => ({
+const CardMain = styled.div({
   flex: 1,
-}));
+});
 const Color = styled.div(() => ({
   backgroundColor: "rgba(213, 133, 68, 1)",
   borderRadius: "50%",
@@ -41,6 +41,7 @@ const HeadingPrice = styled.p(() => ({
 }));
 const Image = styled.img(() => ({
   flex: 1,
+
 }));
 const PriceBackGround = styled.button(() => ({
   display: "flex",

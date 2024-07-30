@@ -4,9 +4,11 @@ import Button from "../componets/button/Button";
 import ArrowRight from "../componets/ArrowIcon";
 
 interface CategoriesProps {
-  name: string;
+  name?: string;
   image?: string;
   imagesec?: string;
+  width?: string;
+  style?: string;
 }
 
 const RootContainer = styled.div(() => ({
@@ -14,14 +16,10 @@ const RootContainer = styled.div(() => ({
   backgroundColor: "rgba(243, 244, 247, 1)",
   justifyContent: "space-between",
   alignItems: "center",
-  paddingLeft: "100px",
-  "@media(max-width:1050px)": {
-    paddingLeft: "35px",
-  },
 }));
 
 const Heading = styled.p(() => ({
-  fontSize: "39px",
+  fontSize: "2vw",
   fontWeight: 600,
   "@media(max-width:1050px)": {
     fontSize: "20px",
@@ -29,22 +27,37 @@ const Heading = styled.p(() => ({
   "@media(max-width:768px)": {
     fontSize: "15px",
   },
-  width: "auto",
+}));
+
+const RootText = styled.div(() => ({
+  marginLeft: "100px",
+  "@media(max-width: 1050px)": {
+    marginLeft: "50px",
+  },
+}));
+const RootImage = styled.div(() => ({
+  marginLeft: "100px",
+  "@media(max-width: 1050px)": {
+    marginLeft: "50px",
+  },
+  "@media(max-width: 768px)": {
+    marginLeft: "20px",
+  },
 }));
 
 const Image = styled.img(() => ({
-  "@media(max-width: 1190px)": {
+  "@media(max-width: 1700px)": {
     width: "100%",
   },
 }));
 
-const Category: FC<CategoriesProps> = ({ name, image }) => {
+const Category: FC<CategoriesProps> = ({ name, image, width, style }) => {
   return (
     <RootContainer>
-      <div>
-        <Heading>{name}</Heading>
+      <RootText>
         <div>
-          <Button 
+          <Heading>{name}</Heading>
+          <Button
             width="150px"
             height="50px"
             BgColor="rgba(243, 244, 247, 1)"
@@ -55,10 +68,10 @@ const Category: FC<CategoriesProps> = ({ name, image }) => {
             border="solid black 2px"
           />
         </div>
-      </div>
-      <div>
+      </RootText>
+      <RootImage>
         <Image src={image} />
-      </div>
+      </RootImage>
     </RootContainer>
   );
 };
