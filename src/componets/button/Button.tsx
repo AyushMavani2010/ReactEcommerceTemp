@@ -32,19 +32,19 @@ const RootContainer = styled.button<{
   color: color,
   alignItems: "center",
   border: border,
-  // "@media(max-width: 1320px)": {
-  //   width: "100px",
-  //   height: "35px",
-  // },
-  // "@media(max-width: 470px)": {
-  //   display: "none",
-  // },
+  "@media(max-width: 1320px)": {
+    width: "100px",
+    height: "35px",
+  },
+  "@media(max-width: 330px)": {
+    display: "none",
+  },
 }));
 
 const Button: FC<ButtonProps> = ({
   BgColor,
   borderRadius,
-  height,
+  height, 
   width,
   icon,
   name,

@@ -1,9 +1,7 @@
 import HeroImage from "../../assets/images/image.png";
 import styled from "@emotion/styled";
-import Button from "../../componets/button/Button";
 import ArrowDown from "../../componets/ArrowDown";
 import ArrowUp from "../../componets/ArrowUp";
-
 
 const RootContainer = styled.div({
   paddingBottom: "100px",
@@ -17,6 +15,18 @@ const HeadingContainer = styled.div({
   },
 });
 
+const Button = styled.button({
+  width: "40px",
+  height: "40px",
+  BgColor: "white",
+  borderRadius: "50px",
+  color: "black",
+  border: "none",
+  "@media (max-width: 768px)": {
+    width: "36px",
+  height: "36px",
+  },
+});
 const QuestionContainer = styled.div({
   display: "flex",
   justifyContent: "space-between",
@@ -95,15 +105,9 @@ const Faq = () => {
               </Answer>
             </div>
           </QuestionChildRoot>
-          <Button
-            width="44px"
-            height="44px"
-            BgColor="rgba(248, 247, 251, 1)"
-            borderRadius="50px"
-            color="black"
-            border="none"
-            icon={<ArrowDown color="black" size={20} />}
-          />
+          <Button>
+            <ArrowDown color="black" size={25} />
+          </Button>
         </QuestionContainer>
         <BorderMain />
 
@@ -114,15 +118,9 @@ const Faq = () => {
               <Question>Do you offer international shipping?</Question>
             </div>
           </QuestionChildRoot>
-          <Button
-            width="44px"
-            height="44px"
-            BgColor="rgba(248, 247, 251, 1)"
-            borderRadius="50px"
-            color="black"
-            border="none"
-            icon={<ArrowUp color="black" size={25} />}
-          />
+          <Button>
+            <ArrowUp color="black" size={25} />
+          </Button>
         </QuestionContainer>
         <BorderMain />
 
@@ -133,15 +131,9 @@ const Faq = () => {
               <Question>What is your return policy?</Question>
             </div>
           </QuestionChildRoot>
-          <Button
-            width="44px"
-            height="44px"
-            BgColor="rgba(248, 247, 251, 1)"
-            borderRadius="50px"
-            color="black"
-            border="none"
-            icon={<ArrowUp color="black" size={25} />}
-          />
+          <Button>
+            <ArrowUp color="black" size={25} />
+          </Button>
         </QuestionContainer>
         <BorderMain />
 
@@ -156,15 +148,9 @@ const Faq = () => {
               </Answer>
             </div>
           </QuestionChildRoot>
-          <Button
-            width="44px"
-            height="44px"
-            BgColor="rgba(248, 247, 251, 1)"
-            borderRadius="50px"
-            color="black"
-            border="none"
-            icon={<ArrowDown color="black" size={25} />}
-          />
+          <Button>
+            <ArrowDown color="black" size={25} />
+          </Button>
         </QuestionContainer>
         <BorderMain />
       </HeadingContainer>

@@ -67,18 +67,20 @@ const Category: FC<CategoriesProps> = ({ name, image, width, style }) => {
   return (
     <RootContainer>
       <RootText>
-        <div>
+        <div style={{ justifyContent: "space-between" }}>
           <Heading>{name}</Heading>
-          <Button
-            width="150px"
-            height="50px"
-            BgColor="rgba(243, 244, 247, 1)"
-            borderRadius="50px"
-            icon={<ArrowRight size={20} />}
-            name="Shop now"
-            color="rgba(104, 106, 116, 1)"
-            border="solid black 2px"
-          />
+          <div>
+            <Button
+              width="150px"
+              height="50px"
+              BgColor="rgba(243, 244, 247, 1)"
+              borderRadius="50px"
+              icon={<ArrowRight size={20} />}
+              name="Shop now"
+              color="rgba(104, 106, 116, 1)"
+              border="solid black 2px"
+            />
+          </div>
         </div>
       </RootText>
       <RootImage>

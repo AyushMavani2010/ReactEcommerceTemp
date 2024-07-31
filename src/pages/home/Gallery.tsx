@@ -1,4 +1,5 @@
-import React from "react";
+import React, { FC, ReactNode } from "react";
+
 import Slider from "../../componets/Slider";
 import styled from "@emotion/styled";
 import GalleryFImage from "../../assets/images/Gallery-Image.png";
@@ -12,8 +13,14 @@ import GalleryEImage from "../../assets/images/Gallery-Image (7).png";
 import GalleryNImage from "../../assets/images/Gallery-Image (8).png";
 import SliderImage from "../../assets/images/bottom.png";
 
-import Button from "../../componets/button/Button";
-
+const Button = styled.button({
+  width: "150px",
+  height: "50px",
+  BgColor: "white",
+  borderRadius: "50px",
+  color: "black",
+  border: "solid black 2px",
+});
 const RootContainer = styled.div({
   paddingBottom: "100px",
 });
@@ -129,15 +136,7 @@ const Gallery = () => {
           <hr style={{ minWidth: "200px", maxWidth: "200px" }} />
         </FooterSlider>
         <FooterButton>
-          <Button
-            width="150px"
-            height="50px"
-            BgColor="white"
-            borderRadius="50px"
-            name="Shop now"
-            color="black"
-            border="solid black 2px"
-          />
+          <Button>Shop more</Button>
         </FooterButton>
       </FooterArea>
     </RootContainer>

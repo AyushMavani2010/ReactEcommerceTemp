@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "@emotion/styled";
 import logo from "../../assets/images/Oasis.png";
 import "../../App.css";
@@ -6,6 +6,7 @@ import ArrowRight from "../../componets/ArrowIcon";
 import Cart from "../../componets/Cart";
 import MenuIcon from "../../componets/Menu";
 import Button from "../../componets/button/Button";
+import Shop from "../../pages/home/Shop";
 
 const Trolly = styled.button({
   width: "50px",
@@ -16,9 +17,6 @@ const Trolly = styled.button({
   border: "none",
   "@media (max-width: 768px)": {
     display: "none",
-  },"@media (max-width: 1240px)": {
-    width:"40px",
-    height:"40px"
   },
 });
 
@@ -37,6 +35,7 @@ const MenuIconWrapper = styled.div({
 
 const Flex = styled.div({
   display: "flex",
+  alignItems: "center",
 });
 
 const RootContiner = styled.div({
@@ -48,6 +47,7 @@ const RootContiner = styled.div({
   alignItems: "center",
   width: "100%",
   height: "auto",
+  padding: "0 20px",
 });
 
 const HomeMenu = styled.ul({
@@ -65,15 +65,39 @@ const StyledLink = styled.a({
   color: "black",
 });
 
+const DropdownMenu = styled.ul({
+  position: "absolute",
+  top: "0px",
+  left: "50%",
+  transform: "translateX(-50%)",
+  backgroundColor: "white",
+  listStyle: "none",
+  padding: "10px 20px",
+  boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+  borderRadius: "10px",
+  display: "flex",
+  flexDirection: "column",
+  gap: "10px",
+  "@media (min-width: 768px)": {
+    display: "none",
+  },
+});
+
 const Header = () => {
+  const [dropdownVisible, setDropdownVisible] = useState(false);
+
+  const toggleDropdown = () => {
+    setDropdownVisible(!dropdownVisible);
+  };
+
   return (
     <RootContiner>
       <div>
-        <img src={logo} alt="" />
+        <img src={logo} alt="Oasis Logo" />
       </div>
       <HomeMenu>
         <li>
-          <StyledLink href="#">Home</StyledLink>
+          <StyledLink href="/shop">Home</StyledLink>
         </li>
         <li>
           <StyledLink href="#">Shop</StyledLink>
@@ -101,10 +125,26 @@ const Header = () => {
             border="none"
           />
         </HeaderButton>
-        <MenuIconWrapper>
+        <MenuIconWrapper onClick={toggleDropdown}>
           <MenuIcon size={30} color="black" />
         </MenuIconWrapper>
       </Flex>
+      {dropdownVisible && (
+        <DropdownMenu>
+          <li>
+            <StyledLink href="#">Home</StyledLink>
+          </li>
+          <li>
+            <StyledLink href="#">Shop</StyledLink>
+          </li>
+          <li>
+            <StyledLink href="#">Categories</StyledLink>
+          </li>
+          <li>
+            <StyledLink href="#">Blog</StyledLink>
+          </li>
+        </DropdownMenu>
+      )}
     </RootContiner>
   );
 };

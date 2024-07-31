@@ -3,7 +3,7 @@ import styled from "@emotion/styled";
 
 import ArrowRight from "../../componets/ArrowIcon";
 
-import CategoryImage from "../../assets/images/HeroMain.png";
+import CategoryImage from "../../assets/images/Image.png";
 import CategorySecFirImage from "../../assets/images/Nightstand -10 1.png";
 import CategorySecSecImage from "../../assets/images/Nightstand -10 1 (1).png";
 import CategoryThirdImage from "../../assets/images/Nightstand -10 1 (2).png";
@@ -21,9 +21,9 @@ const CategoriesHeading = styled.p({
 });
 
 const Flex = styled.div({
-  display: "flex",
-  gap: 50,
   "@media(max-width: 768px)": {
+    display: "flex",
+    justifyContent: "space-between",
     flexDirection: "column",
   },
 });
@@ -35,7 +35,7 @@ const CategoriesCard = styled.div({
     width: "100%",
   },
   "@media(max-width: 768px)": {
-    flex: "1  100%", 
+    flex: "1  100%",
   },
 });
 
@@ -46,11 +46,11 @@ const Category = () => {
         <CategoriesHeading>Categories</CategoriesHeading>
       </div>
       <CategoryCard name="Categories" image={CategoryImage} />
-      <Flex>
-        <CategoriesCard style={{ display: "flex", flexWrap: 'wrap' }}>
+      <Flex style={{ display: "flex", gap: 50, flexWrap: "wrap" }}>
+        <CategoriesCard style={{ flex: 1 }}>
           <CategoryCard name="Accesso" image={CategorySecFirImage} />
         </CategoriesCard>
-        <CategoriesCard>
+        <CategoriesCard style={{ flex: 1 }}>
           <CategoryCard name="Kitchen" image={CategorySecSecImage} />
         </CategoriesCard>
       </Flex>

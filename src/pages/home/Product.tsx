@@ -23,7 +23,6 @@ import GalleryEigImage from "../../assets/images/Image (18).png";
 import GalleryNinImage from "../../assets/images/Image (19).png";
 import GalleryTewImage from "../../assets/images/Image (20).png";
 import Slider from "../../assets/images/bottom.png";
-import Button from "../../componets/button/Button";
 
 import GalleryCard from "../../componets/GalleryCard";
 const RootContainer = styled.div({
@@ -33,7 +32,7 @@ const CategoriesHeading = styled.p({
   fontSize: "39px",
   fontWeight: 600,
   "@media(max-width: 540px)": {
-    fontSize:"29px"
+    fontSize: "29px",
   },
 });
 
@@ -60,6 +59,14 @@ const FooterText = styled.p(() => ({
   display: "flex",
   justifyContent: "center",
 }));
+const Button = styled.button({
+  width: "150px",
+  height: "50px",
+  BgColor: "white",
+  borderRadius: "50px",
+  color: "black",
+  border: "solid black 2px",
+});
 
 const FooterImage = styled.img(() => ({}));
 
@@ -179,15 +186,7 @@ const Product = () => {
         <hr style={{ minWidth: "200px", maxWidth: "200px" }} />
 
         <FooterButton>
-          <Button
-            width="150px"
-            height="50px"
-            BgColor="white"
-            borderRadius="50px"
-            name="Shop now"
-            color="black"
-            border="solid black 2px"
-          />
+          <Button>Shop more</Button>
         </FooterButton>
       </FooterArea>
     </RootContainer>
