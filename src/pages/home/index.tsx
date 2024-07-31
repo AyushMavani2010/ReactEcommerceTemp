@@ -29,12 +29,12 @@ const index = () => {
       <Container>
         <Header />
         {/* <Hero />   */}
-        <Category />
+        {/* <Category /> */}
         {/* <Product /> */}
         {/* <Gallery /> */}
         {/* <Faq /> */}
       </Container>
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 };

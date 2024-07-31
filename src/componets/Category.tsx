@@ -11,12 +11,15 @@ interface CategoriesProps {
   style?: string;
 }
 
-const RootContainer = styled.div(() => ({
+const RootContainer = styled.div({
   display: "flex",
   backgroundColor: "rgba(243, 244, 247, 1)",
   justifyContent: "space-between",
   alignItems: "center",
-}));
+  "@media(max-width: 960px)": {
+    justifyContent: "center",
+  },
+});
 
 const Heading = styled.p(() => ({
   fontSize: "2vw",
@@ -29,19 +32,28 @@ const Heading = styled.p(() => ({
   },
 }));
 
-const RootText = styled.div(() => ({
+const RootText = styled.div({
   marginLeft: "100px",
-  "@media(max-width: 1050px)": {
-    marginLeft: "50px",
+  "@media(max-width: 1240px)": {
+    marginLeft: "45px",
   },
-}));
-const RootImage = styled.div(() => ({
-  marginLeft: "100px",
   "@media(max-width: 1050px)": {
-    marginLeft: "50px",
+    marginLeft: "35px",
+  },
+  "@media(max-width: 960px)": {
+    marginLeft: "25px",
+    textAlign: "center",
   },
   "@media(max-width: 768px)": {
     marginLeft: "20px",
+  },
+});
+
+const RootImage = styled.div(() => ({
+  marginLeft: "100px",
+  "@media(max-width: 960px)": {
+    marginLeft: "0",
+    marginTop: "20px",
   },
 }));
 
@@ -70,7 +82,7 @@ const Category: FC<CategoriesProps> = ({ name, image, width, style }) => {
         </div>
       </RootText>
       <RootImage>
-        <Image src={image} />
+        <Image src={image} width={width} />
       </RootImage>
     </RootContainer>
   );

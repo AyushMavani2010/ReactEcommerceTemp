@@ -40,7 +40,8 @@ const HeadingPrice = styled.p(() => ({
   fontWeight: 500,
 }));
 const Image = styled.img(() => ({
-  flex: 1,
+  width: "auto",
+  height: "auto",
 
 }));
 const PriceBackGround = styled.button(() => ({

@@ -16,6 +16,9 @@ const Trolly = styled.button({
   border: "none",
   "@media (max-width: 768px)": {
     display: "none",
+  },"@media (max-width: 1240px)": {
+    width:"40px",
+    height:"40px"
   },
 });
 

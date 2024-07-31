@@ -18,6 +18,11 @@ const FirstSection = styled.div({
   justifyContent: "space-between",
   flexDirection: "column",
 });
+const SecondSection = styled.div({
+  display: "flex  ",
+  flexDirection: "column",
+  
+});
 const FirstSectionText = styled.div({
   display: "flex",
   gap: 10,
@@ -54,26 +59,28 @@ const Footer = () => {
             <Page href="#">Sale</Page>/<Page href="#">About us</Page>
           </FirstSectionText>
         </FirstSection>
-        <FirstSection
-          style={{
-            display: "flex",
-            justifyContent: "end",
-            flexDirection: "column",
-          }}
-        >
-          <Heading>Contact Us</Heading>
-          <Text>+1 999 888-76-54</Text>
-          <Heading style={{ fontSize: "14px" }}>Email</Heading>
-          <Text style={{ fontSize: "14px" }}>hello@logoipsum.com</Text>
-        </FirstSection>
-        <FirstSection>
-          <Heading>Address</Heading>
-          <Text style={{ fontSize: "14px" }}>
-            2118 Thornridge Cir. Syracuse, Connecticut 35624
-          </Text>
-          <Heading>Opening hours</Heading>
-          <Text>9am—6pm</Text>
-        </FirstSection>
+        <SecondSection >
+          <div>
+            <Heading>Contact Us</Heading>
+            <Text>+1 999 888-76-54</Text>
+          </div>
+          <div>
+            <Heading style={{ fontSize: "14px" }}>Email</Heading>
+            <Text style={{ fontSize: "14px" }}>hello@logoipsum.com</Text>
+          </div>
+        </SecondSection>
+        <SecondSection>
+          <div>
+            <Heading>Address</Heading>
+            <Text style={{ fontSize: "14px" }}>
+              2118 Thornridge Cir. Syracuse, Connecticut 35624
+            </Text>
+          </div>
+          <div>
+            <Heading>Opening hours</Heading>
+            <Text>9am—6pm</Text>
+          </div>
+        </SecondSection>
         <FirstSection>
           <Page href="#">
             <Button
