@@ -6,7 +6,8 @@ import ArrowRight from "../../componets/ArrowIcon";
 import Cart from "../../componets/Cart";
 import MenuIcon from "../../componets/Menu";
 import Button from "../../componets/button/Button";
-import Shop from "../../pages/home/Shop";
+import { Link } from "react-router-dom";
+
 
 const Trolly = styled.button({
   width: "50px",
@@ -97,10 +98,10 @@ const Header = () => {
       </div>
       <HomeMenu>
         <li>
-          <StyledLink href="/shop">Home</StyledLink>
+          <StyledLink href="/">Home</StyledLink>
         </li>
         <li>
-          <StyledLink href="#">Shop</StyledLink>
+          <StyledLink href="/shop">Shop</StyledLink>
         </li>
         <li>
           <StyledLink href="#">Categories</StyledLink>

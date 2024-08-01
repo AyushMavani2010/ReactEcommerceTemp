@@ -95,41 +95,81 @@ const Gallery = () => {
   return (
     <RootContainer>
       <Slider />
-      <Flex>
-        <PhotoMain>
-          <ImageDiv>
-            <img src={GalleryFImage} alt="" style={{ width: "100%" }} />
-          </ImageDiv>
-          <ImageDiv>
-            <img src={GalleryFOImage} alt="" style={{ width: "100%" }} />
-          </ImageDiv>
-          <ImageDiv>
-            <img src={GallerySEmage} alt="" style={{ width: "100%" }} />
-          </ImageDiv>
-        </PhotoMain>
-        <PhotoMain>
-          <ImageDiv>
-            <img src={GallerySImage} alt="" style={{ width: "100%" }} />
-          </ImageDiv>
-          <ImageDiv>
-            <img src={GalleryFFImage} alt="" style={{ width: "100%" }} />
-          </ImageDiv>
-          <ImageDiv>
-            <img src={GalleryEImage} alt="" style={{ width: "100%" }} />
-          </ImageDiv>
-        </PhotoMain>
-        <PhotoMain>
-          <ImageDiv>
-            <img src={GalleryTImage} alt="" style={{ width: "100%" }} />
-          </ImageDiv>
-          <ImageDiv>
-            <img src={GallerySIImage} alt="" style={{ width: "100%" }} />
-          </ImageDiv>
-          <ImageDiv>
-            <img src={GalleryNImage} alt="" style={{ width: "100%" }} />
-          </ImageDiv>
-        </PhotoMain>
-      </Flex>
+      <div id="all">
+
+        <Flex>
+          <PhotoMain>
+            <ImageDiv>
+              <img src={GalleryFImage} alt="" style={{ width: "100%" }} />
+            </ImageDiv>
+            <ImageDiv>
+              <img src={GalleryFOImage} alt="" style={{ width: "100%" }} />
+            </ImageDiv>
+            <ImageDiv>
+              <img src={GallerySEmage} alt="" style={{ width: "100%" }} />
+            </ImageDiv>
+          </PhotoMain>
+          <PhotoMain>
+            <ImageDiv>
+              <img src={GallerySImage} alt="" style={{ width: "100%" }} />
+            </ImageDiv>
+            <ImageDiv>
+              <img src={GalleryFFImage} alt="" style={{ width: "100%" }} />
+            </ImageDiv>
+            <ImageDiv>
+              <img src={GalleryEImage} alt="" style={{ width: "100%" }} />
+            </ImageDiv>
+          </PhotoMain>
+          <PhotoMain>
+            <ImageDiv>
+              <img src={GalleryTImage} alt="" style={{ width: "100%" }} />
+            </ImageDiv>
+            <ImageDiv>
+              <img src={GallerySIImage} alt="" style={{ width: "100%" }} />
+            </ImageDiv>
+            <ImageDiv>
+              <img src={GalleryNImage} alt="" style={{ width: "100%" }} />
+            </ImageDiv>
+          </PhotoMain>
+        </Flex>
+      </div>
+      <div id="bedroom">
+        <Flex>
+          <PhotoMain>
+            <ImageDiv>
+              <img src={GallerySImage} alt="" style={{ width: "100%" }} />
+            </ImageDiv>
+            <ImageDiv>
+              <img src={GalleryFFImage} alt="" style={{ width: "100%" }} />
+            </ImageDiv>
+            <ImageDiv>
+              <img src={GalleryEImage} alt="" style={{ width: "100%" }} />
+            </ImageDiv>
+          </PhotoMain>
+          <PhotoMain>
+            <ImageDiv>
+              <img src={GalleryFImage} alt="" style={{ width: "100%" }} />
+            </ImageDiv>
+            <ImageDiv>
+              <img src={GalleryFOImage} alt="" style={{ width: "100%" }} />
+            </ImageDiv>
+            <ImageDiv>
+              <img src={GallerySEmage} alt="" style={{ width: "100%" }} />
+            </ImageDiv>
+          </PhotoMain>
+          <PhotoMain>
+            <ImageDiv>
+              <img src={GalleryTImage} alt="" style={{ width: "100%" }} />
+            </ImageDiv>
+            <ImageDiv>
+              <img src={GallerySIImage} alt="" style={{ width: "100%" }} />
+            </ImageDiv>
+            <ImageDiv>
+              <img src={GalleryNImage} alt="" style={{ width: "100%" }} />
+            </ImageDiv>
+          </PhotoMain>
+        </Flex>
+      </div>
       <FooterArea>
         <FooterText>Showing 20 of 48 results</FooterText>
         <FooterSlider>

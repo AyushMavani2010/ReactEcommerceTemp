@@ -27,7 +27,6 @@ const index = () => {
   return (
     <>
       <Container>
-        <Header />
         <Hero />  
         <Category />  
         <Product />

@@ -18,7 +18,7 @@ const Slider = () => {
     <div>
       <OwlCarousel className="owl-theme" {...options}>
         <div className="item">
-          <a href="">
+          <a href="#all">
             <Button
               width="150px"
               height="50px"
@@ -31,15 +31,17 @@ const Slider = () => {
           </a>
         </div>
         <div className="item">
-          <Button
-            width="150px"
-            height="50px"
-            BgColor="rgba(248, 247, 251, 1)"
-            borderRadius="50px"
-            name="Bedroom"
-            color="rgba(46, 47, 51, 1)"
-            border="none"
-          />
+          <a href="#bedroom">
+            <Button
+              width="150px"
+              height="50px"
+              BgColor="rgba(124, 113, 223, 1)"
+              borderRadius="50px"
+              name="Bedroom"
+              color="white"
+              border="none"
+            />
+          </a>
         </div>
         <div className="item">
           <Button
