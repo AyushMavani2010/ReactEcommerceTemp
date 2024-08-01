@@ -1,13 +1,13 @@
-import React from 'react'
-import Header from '../home/Header'
-
+import React from "react";
+import Header from "../home/Header";
+import Hero from "../shop/Hero";
 
 const Shop = () => {
   return (
-    <>  
-    <h1>Shop</h1>
+    <>
+      <Hero />
     </>
-  )
-}
+  );
+};
 
-export default Shop
+export default Shop;

@@ -9,7 +9,7 @@ const Container = styled.div({
   fontFamily: "Inter",
   padding: "20px 70px ",
   "@media(max-width: 768px)": {
-    padding: "0px 50px"
+    padding: "20px 50px"
   },
   "@media(max-width: 540px)": {
     padding: "20px 30px"

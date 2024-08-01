@@ -143,7 +143,7 @@ const Product = () => {
           image={GalleryThrImage}
           name="Round Terra Marble Table"
           price="$129"
-        ></GalleryCard>
+        />
         <GalleryCard
           image={GalleryFourmage}
           name="Ceramic Rustic Vase Matte "

@@ -23,13 +23,6 @@ const HeroSecText = styled.p({
   fontSize: "49px",
   fontWeight: 700,
 
-  // "@media (max-width: 1320px)": {
-  //   fontSize: "51px",
-  // },
-
-  // "@media (max-width: 540px)": {
-  //   fontSize: "40px",
-  // },
   "@media (max-width: 425px)": {
     fontSize: "25px",
   },

@@ -59,24 +59,6 @@ const FooterSlider = styled.div({
     Width: "100px",
   },
 });
-const ImageDiv = styled.div({
-  paddingBottom: "40px",
-  "@media(max-width: 1320px)": {
-    paddingBottom: "35px",
-  },
-  "@media(max-width: 1140px)": {
-    paddingBottom: "25px",
-  },
-  "@media(max-width: 960px)": {
-    paddingBottom: "20px",
-  },
-  "@media(max-width: 720px)": {
-    paddingBottom: "15px",
-  },
-  "@media(max-width: 540px)": {
-    paddingBottom: "10px",
-  },
-});
 
 const FooterButton = styled.div({
   display: "flex",
@@ -95,81 +77,6 @@ const Gallery = () => {
   return (
     <RootContainer>
       <Slider />
-      <div id="all">
-
-        <Flex>
-          <PhotoMain>
-            <ImageDiv>
-              <img src={GalleryFImage} alt="" style={{ width: "100%" }} />
-            </ImageDiv>
-            <ImageDiv>
-              <img src={GalleryFOImage} alt="" style={{ width: "100%" }} />
-            </ImageDiv>
-            <ImageDiv>
-              <img src={GallerySEmage} alt="" style={{ width: "100%" }} />
-            </ImageDiv>
-          </PhotoMain>
-          <PhotoMain>
-            <ImageDiv>
-              <img src={GallerySImage} alt="" style={{ width: "100%" }} />
-            </ImageDiv>
-            <ImageDiv>
-              <img src={GalleryFFImage} alt="" style={{ width: "100%" }} />
-            </ImageDiv>
-            <ImageDiv>
-              <img src={GalleryEImage} alt="" style={{ width: "100%" }} />
-            </ImageDiv>
-          </PhotoMain>
-          <PhotoMain>
-            <ImageDiv>
-              <img src={GalleryTImage} alt="" style={{ width: "100%" }} />
-            </ImageDiv>
-            <ImageDiv>
-              <img src={GallerySIImage} alt="" style={{ width: "100%" }} />
-            </ImageDiv>
-            <ImageDiv>
-              <img src={GalleryNImage} alt="" style={{ width: "100%" }} />
-            </ImageDiv>
-          </PhotoMain>
-        </Flex>
-      </div>
-      <div id="bedroom">
-        <Flex>
-          <PhotoMain>
-            <ImageDiv>
-              <img src={GallerySImage} alt="" style={{ width: "100%" }} />
-            </ImageDiv>
-            <ImageDiv>
-              <img src={GalleryFFImage} alt="" style={{ width: "100%" }} />
-            </ImageDiv>
-            <ImageDiv>
-              <img src={GalleryEImage} alt="" style={{ width: "100%" }} />
-            </ImageDiv>
-          </PhotoMain>
-          <PhotoMain>
-            <ImageDiv>
-              <img src={GalleryFImage} alt="" style={{ width: "100%" }} />
-            </ImageDiv>
-            <ImageDiv>
-              <img src={GalleryFOImage} alt="" style={{ width: "100%" }} />
-            </ImageDiv>
-            <ImageDiv>
-              <img src={GallerySEmage} alt="" style={{ width: "100%" }} />
-            </ImageDiv>
-          </PhotoMain>
-          <PhotoMain>
-            <ImageDiv>
-              <img src={GalleryTImage} alt="" style={{ width: "100%" }} />
-            </ImageDiv>
-            <ImageDiv>
-              <img src={GallerySIImage} alt="" style={{ width: "100%" }} />
-            </ImageDiv>
-            <ImageDiv>
-              <img src={GalleryNImage} alt="" style={{ width: "100%" }} />
-            </ImageDiv>
-          </PhotoMain>
-        </Flex>
-      </div>
       <FooterArea>
         <FooterText>Showing 20 of 48 results</FooterText>
         <FooterSlider>

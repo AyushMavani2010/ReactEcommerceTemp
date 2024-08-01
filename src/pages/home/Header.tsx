@@ -14,7 +14,7 @@ const Trolly = styled.button({
   height: "50px",
   backgroundColor: "rgba(248, 247, 251, 1)",
   borderRadius: "50%",
-  marginRight: "20px",
+  marginRight: "20px",  
   border: "none",
   "@media (max-width: 768px)": {
     display: "none",
@@ -48,8 +48,7 @@ const RootContiner = styled.div({
   alignItems: "center",
   width: "100%",
   height: "auto",
-  padding: "0 20px",
-});
+  });
 
 const HomeMenu = styled.ul({
   display: "flex",
@@ -133,10 +132,10 @@ const Header = () => {
       {dropdownVisible && (
         <DropdownMenu>
           <li>
-            <StyledLink href="#">Home</StyledLink>
+            <StyledLink href="/">Home</StyledLink>
           </li>
           <li>
-            <StyledLink href="#">Shop</StyledLink>
+            <StyledLink href="/shop">Shop</StyledLink>
           </li>
           <li>
             <StyledLink href="#">Categories</StyledLink>
