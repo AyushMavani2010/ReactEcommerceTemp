@@ -3,7 +3,7 @@ import styled from "@emotion/styled";
 
 import ArrowRight from "../../componets/ArrowIcon";
 
-import CategoryImage from "../../assets/images/Image.png";
+import CategoryImage from "../../assets/images/HeroMain.png";
 import CategorySecFirImage from "../../assets/images/Nightstand -10 1.png";
 import CategorySecSecImage from "../../assets/images/Nightstand -10 1 (1).png";
 import CategoryThirdImage from "../../assets/images/Nightstand -10 1 (2).png";

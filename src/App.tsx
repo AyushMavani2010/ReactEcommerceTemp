@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Header from "./pages/home/Header";
+import Footer from "./pages/home/Footer";
 import Shop from "./pages/shop";
 import Home from "./pages/home";
 import styled from "@emotion/styled";
@@ -28,6 +29,7 @@ const App = () => {
           <Route path="/shop" element={<Shop />} />
         </Routes>
       </Container>
+      <Footer />
     </Router>
   );
 };

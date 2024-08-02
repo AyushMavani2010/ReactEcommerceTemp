@@ -23,6 +23,7 @@ import GalleryEigImage from "../../assets/images/Image (18).png";
 import GalleryNinImage from "../../assets/images/Image (19).png";
 import GalleryTewImage from "../../assets/images/Image (20).png";
 import Slider from "../../assets/images/bottom.png";
+import { ProductData } from "../../database/index";
 
 import GalleryCard from "../../componets/GalleryCard";
 const RootContainer = styled.div({
@@ -75,7 +76,7 @@ const Product = () => {
     <RootContainer>
       <CategoriesHeading>Top Products</CategoriesHeading>
 
-      <Flex>
+       {/* <Flex>
         <GalleryCard
           image={GalleryFirstImage}
           name="Faux Leather Sofa Couch"
@@ -180,7 +181,18 @@ const Product = () => {
           name="Luna Modern Round Ottoman"
           price="$38"
         ></GalleryCard>
+      </Flex>  */}
+      <Flex>
+        {ProductData.map((item: any, index: any) => (
+          <GalleryCard
+            key={index}
+            image={item.image}
+            name={item.name}
+            price={item.price}
+          />
+        ))}
       </Flex>
+
       <FooterArea>
         <FooterText>Showing 20 of 48 results</FooterText>
         <hr style={{ minWidth: "200px", maxWidth: "200px" }} />

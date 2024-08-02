@@ -25,15 +25,22 @@ const PageDiv = styled.div({
   gap: 20,
 });
 const Input = styled.input({
+  border: "none",
+  fontSize: "16px",
+  fontWeight: 400,
+  outline: "none",
+});
+const InputContainer = styled.div({
   borderRadius: "50px",
   height: "50px",
   border: "1px solid rgba(186, 187, 193, 1)",
   fontSize: "16px",
   fontWeight: 400,
-});
-const InputContainer = styled.div({
   display: "flex",
   justifyContent: "center",
+  gap: 30,
+  alignItems: "center",
+  width:"50%",
 });
 const Page = styled.a({
   textDecoration: "none",
@@ -56,8 +63,12 @@ const Hero = () => {
           <Page href="#">Sitting Room</Page>
         </PageDiv>
         <InputContainer>
-          <Input placeholder="Search by name or category..."></Input>
-          <Search size={20} />
+          <div>
+            <Input placeholder="Search by name or category..."></Input>
+          </div>  
+          <div>
+            <Search size={20} />
+          </div>
         </InputContainer>
       </RootDiv>
     </RootContianer>
