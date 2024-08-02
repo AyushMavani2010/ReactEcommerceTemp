@@ -29,6 +29,12 @@ const Input = styled.input({
   fontSize: "16px",
   fontWeight: 400,
   outline: "none",
+  marginLeft: "20px",
+});
+const InputContainerRoot = styled.div({
+  display: "flex",
+  justifyContent: "center",
+  paddingTop:"50px",
 });
 const InputContainer = styled.div({
   borderRadius: "50px",
@@ -37,17 +43,15 @@ const InputContainer = styled.div({
   fontSize: "16px",
   fontWeight: 400,
   display: "flex",
-  justifyContent: "center",
   gap: 30,
   alignItems: "center",
-  width:"50%",
+  justifyContent: "space-between",
 });
 const Page = styled.a({
   textDecoration: "none",
   color: "rgba(95, 105, 128, 1)",
   fontSize: "18px",
 });
-const HeroInput = styled.input({});
 const Hero = () => {
   return (
     <RootContianer>
@@ -62,14 +66,18 @@ const Hero = () => {
           <Page href="/category">Categories</Page>/
           <Page href="#">Sitting Room</Page>
         </PageDiv>
-        <InputContainer>
-          <div>
-            <Input placeholder="Search by name or category..."></Input>
-          </div>  
-          <div>
-            <Search size={20} />
-          </div>
-        </InputContainer>
+        <InputContainerRoot>
+          <InputContainer>
+            <div>
+              <Input placeholder="Search by name or category..."></Input>
+            </div>
+            <div style={{ display: "flex", marginRight: "20px" }}>
+              <button style={{ border: "none", backgroundColor: "white" }}>
+                <Search size={20} />
+              </button>
+            </div>
+          </InputContainer>
+        </InputContainerRoot>
       </RootDiv>
     </RootContianer>
   );

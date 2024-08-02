@@ -8,13 +8,12 @@ import MenuIcon from "../../componets/Menu";
 import Button from "../../componets/button/Button";
 import { Link } from "react-router-dom";
 
-
 const Trolly = styled.button({
   width: "50px",
   height: "50px",
   backgroundColor: "rgba(248, 247, 251, 1)",
   borderRadius: "50%",
-  marginRight: "20px",  
+  marginRight: "20px",
   border: "none",
   "@media (max-width: 768px)": {
     display: "none",
@@ -43,12 +42,14 @@ const RootContiner = styled.div({
   position: "sticky",
   backgroundColor: "white",
   top: 0,
+  padding: "10px 0",
   display: "flex",
   justifyContent: "space-between",
   alignItems: "center",
   width: "100%",
   height: "auto",
-  });
+  zIndex: 1000,
+});
 
 const HomeMenu = styled.ul({
   display: "flex",

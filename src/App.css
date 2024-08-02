@@ -1,3 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 
+.custom-nav-container {
+  display: flex;
+  gap: 10px;
+}
 
+.custom-nav-container .owl-prev,
+.custom-nav-container .owl-next {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.css-69z67c-MuiTabs-scroller {
+  opacity: 1;
+}

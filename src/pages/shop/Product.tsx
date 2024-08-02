@@ -48,6 +48,7 @@ const Button = styled.button({
   border: "solid black 2px",
 });
 
+
 const FooterImage = styled.img(() => ({}));
 
 const Product = () => {
@@ -55,7 +56,6 @@ const Product = () => {
     <RootContainer>
       <CategoriesHeading>Top Products</CategoriesHeading>
 
-    
       <Flex>
         {ProductData.map((item: any, index: any) => (
           <GalleryCard
