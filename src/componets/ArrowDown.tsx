@@ -1,4 +1,4 @@
-import { ReactComponent as ArrowRight } from "../assets/icon/arrow-down.svg";
+import { ReactComponent as UsernName } from "../assets/icon/arrow-down.svg";
 import React, { FC } from "react";
 
 interface IconProps {
@@ -7,7 +7,7 @@ interface IconProps {
 }
 
 const ArrowDown: FC<IconProps> = ({ color, size }) => {
-  return <ArrowRight width={size} height={size} color={color} />;
+  return <UsernName width={size} height={size} color={color} />;
 };
 
 export default ArrowDown;

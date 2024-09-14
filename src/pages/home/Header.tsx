@@ -61,10 +61,10 @@ const HomeMenu = styled.ul({
   },
 });
 
-const StyledLink = styled.a({
-  textDecoration: "none",
-  color: "black",
-});
+  const StyledLink = styled.a({
+    textDecoration: "none",
+    color: "black",
+  });
 
 const DropdownMenu = styled.ul({
   position: "absolute",
@@ -116,7 +116,7 @@ const Header = () => {
         </Trolly>
         <HeaderButton>
           <Button
-            width="150px"
+            width="150px" 
             height="50px"
             BgColor="rgb(124, 113, 223 )"
             borderRadius="50px"

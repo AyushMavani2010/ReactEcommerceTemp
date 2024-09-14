@@ -30,11 +30,12 @@ const Input = styled.input({
   fontWeight: 400,
   outline: "none",
   marginLeft: "20px",
+
 });
 const InputContainerRoot = styled.div({
   display: "flex",
   justifyContent: "center",
-  paddingTop:"50px",
+  paddingTop: "50px",
 });
 const InputContainer = styled.div({
   borderRadius: "50px",
